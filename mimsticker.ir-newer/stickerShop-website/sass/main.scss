@@ -1,0 +1,8 @@
+//THIS FILE CHANGES BOOSTRAPS DEFAULTS
+
+$theme-colors:(
+    "primary": rgb(0,204,255)
+    "myPrimary": #3DBAD4
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
