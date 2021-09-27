@@ -1,5 +1,6 @@
 :root {
     --primary: #3DBAD4;
+    --gray: #6B7C93;
   }
 @font-face {
     font-family: shabnamFont;
@@ -26,6 +27,7 @@
 }
 body{
     font-family: 'shabnamFont';
+    line-height: 5%;
 }
 .hero{
     position: relative;
@@ -51,4 +53,51 @@ body{
 .carousel .carousel-control-prev-icon
 {
      background-image: none; 
+}
+.secondPart,
+.thirdPart
+{
+    line-height: 50px;
+}
+.secondPartImage{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.secondPartLeft,
+.thirdPartRight
+{
+    position: relative;
+}
+.secondPartText,
+.thirdPartText
+{
+    position: absolute;
+    top: 4.5vh;
+    line-height: 2em;
+}
+.secondPartText .card-text,
+.thirdPartText .card-text
+{
+    line-height: 2.5em;
+}
+.secondPartText ul ,
+.thirdPartText ul
+{
+    list-style: none;
+}
+.secondPartText ul li::before
+{
+    content: "\2022";
+    color: var(--primary);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    /* height: 2em; line height */
+    margin-left: .5em;
+}
+.secondPartText .btn,
+.thirdPartText .btn
+{
+    background: var(--primary);
 }
