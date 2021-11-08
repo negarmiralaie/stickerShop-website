@@ -1,103 +1,142 @@
 :root {
-    --primary: #3DBAD4;
-    --gray: #6B7C93;
-  }
+  --primary: #3DBAD4;
+  --gray: #6B7C93;
+}
+
 @font-face {
-    font-family: shabnamFont;
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Light.woff') format('woff');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Light.ttf') format('ttf');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Light.eot') format('eot');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Bold.eot') format('eot');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Bold.ttf')format('ttf');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Bold.woff') format('woff');
+  font-family: shabnamFont;
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.woff") format("woff");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.ttf") format("ttf");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.eot") format("eot");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.eot") format("eot");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.ttf") format("ttf");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.woff") format("woff");
 }
+
 @font-face {
-    font-family: vazirFont;
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.eot) format('eot');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.ttf) format('ttf');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.woff) format('woff');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.eot) format('eot');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.ttf) format('ttf');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.woff) format('woff');
+  font-family: vazirFont;
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.eot) format("eot");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.ttf) format("ttf");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.woff) format("woff");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.eot) format("eot");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.ttf) format("ttf");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.woff) format("woff");
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'shabnamFont', 'vazirFont';
 }
-body{
-    font-family: 'shabnamFont';
-    line-height: 5%;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.hero{
-    position: relative;
-    padding: 2rem;
+
+.hero {
+  position: relative;
+  padding: 2rem;
 }
-.carousel-caption h5{
-    position: absolute;
-    bottom: 40vh;
-    font-weight: 500;
-    font-size: 2em;
-    z-index: 2;
+
+.carousel-caption h5 {
+  position: absolute;
+  bottom: 40vh;
+  font-weight: 500;
+  font-size: 2em;
+  z-index: 2;
 }
+
 .carousel .carousel-indicators button {
-     background-color:white ;
-     border-radius: 100%;
-     height: 10px;
-     width: 10px;
+  background-color: white;
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
 }
+
 .carousel .carousel-indicators button.active {
-    background-color: var(--primary);
+  background-color: var(--primary);
 }
+
 .carousel .carousel-control-next-icon,
-.carousel .carousel-control-prev-icon
-{
-     background-image: none; 
+.carousel .carousel-control-prev-icon {
+  background-image: none;
 }
-.secondPart,
-.thirdPart
-{
-    line-height: 50px;
+
+.topCard,
+.bottomCard {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 40px;
 }
-.secondPartImage{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+
+.topCard img,
+.bottomCard img {
+  width: 100%;
+  height: 100%;
+  margin: 45px auto 45px auto;
 }
-.secondPartLeft,
-.thirdPartRight
-{
-    position: relative;
+
+.topCard ul,
+.bottomCard ul {
+  list-style: none;
 }
-.secondPartText,
-.thirdPartText
-{
-    position: absolute;
-    top: 4.5vh;
-    line-height: 2em;
+
+.topCard ul li::before,
+.bottomCard ul li::before {
+  content: "\2022";
+  color: var(--primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: .5em;
 }
-.secondPartText .card-text,
-.thirdPartText .card-text
-{
-    line-height: 2.5em;
+
+.topCard input[type='button'],
+.bottomCard input[type='button'] {
+  background: var(--primary);
 }
-.secondPartText ul ,
-.thirdPartText ul
-{
-    list-style: none;
+
+.topCard .topCardText {
+  max-width: 100%;
+  margin: 25px auto 25px auto;
 }
-.secondPartText ul li::before
-{
-    content: "\2022";
-    color: var(--primary);
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    /* height: 2em; line height */
-    margin-left: .5em;
+
+.bottomCard .bottomCardText {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 25px auto 25px auto;
 }
-.secondPartText .btn,
-.thirdPartText .btn
-{
-    background: var(--primary);
+
+@media screen and (min-width: 1024px) {
+  .topCard,
+  .bottomCard {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .topCard .bottomCardText,
+  .bottomCard .bottomCardText {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
+/*# sourceMappingURL=style.css.map */
