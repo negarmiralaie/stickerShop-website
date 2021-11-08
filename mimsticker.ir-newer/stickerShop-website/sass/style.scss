@@ -1,127 +1,148 @@
 :root {
-    --primary: #3DBAD4;
-    --gray: #6B7C93;
+  --myPrimary: #46a9e0;
+  --gray: #6b7c93;
 }
 
 @font-face {
-    font-family: shabnamFont;
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Light.woff') format('woff');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Light.ttf') format('ttf');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Light.eot') format('eot');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Bold.eot') format('eot');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Bold.ttf')format('ttf');
-    src: url('../fonts/shabnam-font-v1.1.0/Shabnam-Bold.woff') format('woff');
+  font-family: shabnamFont;
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.woff") format("woff");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.ttf") format("ttf");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.eot") format("eot");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.eot") format("eot");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.ttf") format("ttf");
+  src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: vazirFont;
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.eot) format('eot');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.ttf) format('ttf');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.woff) format('woff');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.eot) format('eot');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.ttf) format('ttf');
-    src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.woff) format('woff');
+  font-family: vazirFont;
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.eot) format("eot");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.ttf) format("ttf");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.woff) format("woff");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.eot) format("eot");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.ttf) format("ttf");
+  src: url(../fonts/vazir-font-v8.2.1/Vazir-Light.woff) format("woff");
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'shabnamFont', 'vazirFont';
+  margin: 0;
+  padding: 0;
+  font-family: "shabnamFont", "vazirFont";
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navButtons {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 0 4rem; //remember to fix this you should set padding only one and not for every element
+
+  input[type="button"] {
+    background-color: var(--myPrimary);
+    width: 100%;
+    height: 11vh;
+    font-weight: bold;
+  }
+
+  :nth-child(2) {
+    background: url(../pictures/navButtonsBg.jpg);
+  }
 }
 
 .hero {
-    position: relative;
-    padding: 2rem;
+  position: relative;
+  padding: 2rem;
 }
 
 .carousel-caption h5 {
-    position: absolute;
-    bottom: 40vh;
-    font-weight: 500;
-    font-size: 2em;
-    z-index: 2;
+  position: absolute;
+  bottom: 40vh;
+  font-weight: 500;
+  font-size: 2em;
+  z-index: 2;
 }
 
 .carousel .carousel-indicators button {
-    background-color: white;
-    border-radius: 100%;
-    height: 10px;
-    width: 10px;
+  background-color: white;
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
 }
 
 .carousel .carousel-indicators button.active {
-    background-color: var(--primary);
+  background-color: var(--myPrimary);
 }
 
 .carousel .carousel-control-next-icon,
 .carousel .carousel-control-prev-icon {
-    background-image: none;
+  background-image: none;
 }
 
 .topCard,
 .bottomCard {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    line-height: 40px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 40px;
+  padding: 0 2rem; //remember to fix this you should set padding only one and not for every element
 
-    img {
-        width: 100%;
-        height: 100%;
-        margin: 25px auto 25px auto;
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 25px auto 25px auto;
+  }
+
+  ul {
+    list-style: none;
+
+    li::before {
+      content: "\2022";
+      color: var(--myPrimary);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: 0.5em;
     }
+  }
 
-    ul {
-        list-style: none;
-
-        li::before {
-            content: "\2022";
-            color: var(--primary);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: .5em;
-        }
-    }
-
-    input[type='button'] {
-        background: var(--primary);
-    }
+  input[type="button"] {
+    background: var(--myPrimary);
+  }
 }
 
 .topCard {
-
-    .topCardText {
-        max-width: 100%;
-        margin: 5px auto 25px auto;
-    }
+  .topCardText {
+    max-width: 100%;
+    margin: 5px auto 25px auto;
+  }
 }
 
 .bottomCard {
-
-    .bottomCardText {
-        order: 1;
-        margin: 5px auto 25px auto;
-    }
+  .bottomCardText {
+    order: 1;
+    margin: 5px auto 25px auto;
+  }
 }
 
 @media screen and(min-width: 1024px) {
+  .topCard,
+  .bottomCard {
+    flex-direction: row;
 
-    .topCard,
-    .bottomCard {
-        flex-direction: row;
-
-        .bottomCardText {
-            order: -1;
-        }
+    .bottomCardText {
+      order: -1;
     }
+  }
+
+  .navButtons {
+    flex-flow: column wrap;
+    justify-content: space-around;
+  }
 }

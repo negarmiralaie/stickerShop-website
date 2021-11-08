@@ -1,6 +1,6 @@
 :root {
-  --primary: #3DBAD4;
-  --gray: #6B7C93;
+  --myPrimary: #46a9e0;
+  --gray: #6b7c93;
 }
 
 @font-face {
@@ -26,7 +26,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'shabnamFont', 'vazirFont';
+  font-family: "shabnamFont", "vazirFont";
 }
 
 * {
@@ -34,6 +34,31 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.navButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4rem;
+}
+
+.navButtons input[type="button"] {
+  background-color: var(--myPrimary);
+  width: 100%;
+  height: 11vh;
+  font-weight: bold;
+}
+
+.navButtons :nth-child(2) {
+  background: url(../pictures/navButtonsBg.jpg);
 }
 
 .hero {
@@ -57,7 +82,7 @@ body {
 }
 
 .carousel .carousel-indicators button.active {
-  background-color: var(--primary);
+  background-color: var(--myPrimary);
 }
 
 .carousel .carousel-control-next-icon,
@@ -74,8 +99,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -83,6 +108,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   line-height: 40px;
+  padding: 0 2rem;
 }
 
 .topCard img,
@@ -100,16 +126,16 @@ body {
 .topCard ul li::before,
 .bottomCard ul li::before {
   content: "\2022";
-  color: var(--primary);
+  color: var(--myPrimary);
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
-.topCard input[type='button'],
-.bottomCard input[type='button'] {
-  background: var(--primary);
+.topCard input[type="button"],
+.bottomCard input[type="button"] {
+  background: var(--myPrimary);
 }
 
 .topCard .topCardText {
@@ -137,6 +163,14 @@ body {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+  }
+  .navButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=style.css.map */
