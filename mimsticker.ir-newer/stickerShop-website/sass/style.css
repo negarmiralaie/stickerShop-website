@@ -89,7 +89,7 @@ body {
 .bottomCard img {
   width: 100%;
   height: 100%;
-  margin: 45px auto 45px auto;
+  margin: 25px auto 25px auto;
 }
 
 .topCard ul,
@@ -114,14 +114,14 @@ body {
 
 .topCard .topCardText {
   max-width: 100%;
-  margin: 25px auto 25px auto;
+  margin: 5px auto 25px auto;
 }
 
 .bottomCard .bottomCardText {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  margin: 25px auto 25px auto;
+  margin: 5px auto 25px auto;
 }
 
 @media screen and (min-width: 1024px) {
