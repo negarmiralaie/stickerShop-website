@@ -132,6 +132,7 @@ body {
 }
 
 @media screen and(min-width: 1024px) {
+
   .topCard,
   .bottomCard {
     flex-direction: row;
@@ -145,4 +146,36 @@ body {
     flex-flow: row wrap;
     justify-content: space-around;
   }
+}
+
+.fqaArticle {
+  line-height: 1.9rem;
+  position: relative;
+
+  h3 {
+    text-align: center;
+    position: relative;
+  }
+
+  h3::after {
+    content: "aa";
+    background-color: red;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+  }
+
+  p {
+    margin: .5rem;
+  }
+
+  article {
+    margin-top: 1.2rem;
+    background-color: #6b7c93;
+  }
+
+  .fqaAnswerParagraph{
+    display: none;
+  }
+  
 }

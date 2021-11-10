@@ -57,10 +57,6 @@ body {
   font-weight: bold;
 }
 
-.navButtons :nth-child(2) {
-  background: url(../pictures/navButtonsBg.jpg);
-}
-
 .hero {
   position: relative;
   padding: 2rem;
@@ -165,12 +161,43 @@ body {
             order: -1;
   }
   .navButtons {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+}
+
+.fqaArticle {
+  line-height: 1.9rem;
+  position: relative;
+}
+
+.fqaArticle h3 {
+  text-align: center;
+  position: relative;
+}
+
+.fqaArticle h3::after {
+  content: "aa";
+  background-color: red;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+
+.fqaArticle p {
+  margin: .5rem;
+}
+
+.fqaArticle article {
+  margin-top: 1.2rem;
+  background-color: #6b7c93;
+}
+
+.fqaArticle .fqaAnswerParagraph {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
