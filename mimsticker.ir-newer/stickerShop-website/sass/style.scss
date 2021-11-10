@@ -49,7 +49,7 @@ body {
   }
 
   :nth-child(2) {
-    background: url(../pictures/navButtonsBg.jpg);
+    // background: url(../pictures/navButtonsBg.jpg) no-repeat;
   }
 }
 
@@ -142,7 +142,7 @@ body {
   }
 
   .navButtons {
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
   }
 }
