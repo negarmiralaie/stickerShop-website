@@ -172,20 +172,10 @@ body {
 
 .fqaArticle {
   line-height: 1.9rem;
-  position: relative;
 }
 
 .fqaArticle h3 {
   text-align: center;
-  position: relative;
-}
-
-.fqaArticle h3::after {
-  content: "aa";
-  background-color: red;
-  position: absolute;
-  top: 1rem;
-  left: 0;
 }
 
 .fqaArticle p {
@@ -194,10 +184,11 @@ body {
 
 .fqaArticle article {
   margin-top: 1.2rem;
-  background-color: #6b7c93;
 }
 
 .fqaArticle .fqaAnswerParagraph {
   display: none;
+  -webkit-box-shadow: 0px 20px #f01010;
+          box-shadow: 0px 20px #f01010;
 }
 /*# sourceMappingURL=style.css.map */
