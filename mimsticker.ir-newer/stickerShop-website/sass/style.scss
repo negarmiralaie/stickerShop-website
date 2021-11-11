@@ -1,6 +1,7 @@
 :root {
   --myPrimary: #46a9e0;
   --gray: #6b7c93;
+  --gray-500: rgba(0, 0, 0, 0.2);
 }
 
 @font-face {
@@ -154,7 +155,6 @@ body {
   h3 {
     text-align: center;
     display: inline-block;
-    background: blue;
   }
 
   p {
@@ -166,11 +166,25 @@ body {
   }
 
   .fqaQuestionParagraph {
-    box-shadow: 0px 20px rgba(0, 0, 0.25);
+    // box-shadow: 0px 20px rgba(0, 0, 0, 0.2);
+    padding: .4rem .8rem;
+    cursor: pointer;
+    border: solid;
+    border-color: var(--gray-500);
   }
 
   p.fqaAnswerParagraph {
+    background-color: var(--gray-500);
     display: none;
-    box-shadow: 0px 20px rgba(0, 0, 0.25);
+    padding: .4rem .8rem;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+    // height: 0; //another way for creating the accordion
+  }
+
+  p.fqaAnswerParagraph.active {
+    display: block;
+    // height: 10vh;  //another way for creatting the accordion
   }
 }

@@ -111,7 +111,8 @@ const fqaChildArticleObj = document.querySelectorAll(".fqaChildArticle");
 Array.from(fqaChildArticleObj).forEach(function (fqaChild) {
   fqaChild.addEventListener("click", (e) => {
     fqaAnswer = fqaChild.querySelector(".fqaAnswerParagraph");
-    fqaAnswer.style.display = "block";
+    // fqaAnswer.style.display = "block";
+    fqaAnswer.classList.toggle("active");
   });
 });
 
