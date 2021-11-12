@@ -88,11 +88,17 @@ body {
   align-items: center;
   justify-content: space-between;
   line-height: 40px;
+  margin-top: 20px;
 
   img {
     width: 100%;
     min-height: 100%;
-    margin: 25px auto 25px auto;
+    margin-right: a;
+  }
+
+  .topCardText{
+    margin-left: auto;
+    width: 50%;
   }
 
   ul {
