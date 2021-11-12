@@ -6,6 +6,7 @@ class fqa {
   questionParagraph;
   answerParagraph;
   questionNo;
+  icon;
 
   constructor(question, answer, questionNo) {
     this.question = question;
@@ -15,16 +16,23 @@ class fqa {
 
   writeQuestionToHTML() {
     this.questionParagraph = document.createElement("p");
-    this.questionParagraph.classList.add("questionNo" + this.questionNo);
-    this.questionParagraph.classList.add("fqaQuestionParagraph");
+    this.questionParagraph.classList.add(
+      "questionNo" + this.questionNo,
+      "fqaQuestionParagraph"
+    );
     this.questionParagraph.setAttribute("id", "questionNo" + this.questionNo);
     this.questionParagraph.innerText = this.question;
+    this.icon = document.createElement("i");
+    this.icon.classList.add("fa", "fa-plus", "fa-1x", "addRemoveIcon");
+    this.questionParagraph.append(this.icon);
   }
 
   writeAnswerToHTML() {
     this.answerParagraph = document.createElement("p");
-    this.answerParagraph.classList.add("answerNo" + this.questionNo);
-    this.answerParagraph.classList.add("fqaAnswerParagraph");
+    this.answerParagraph.classList.add(
+      "answerNo" + this.questionNo,
+      "fqaAnswerParagraph"
+    );
     this.answerParagraph.setAttribute("id", "answerNo" + this.questionNo);
     this.answerParagraph.innerText = this.answer;
   }
@@ -113,6 +121,9 @@ Array.from(fqaChildArticleObj).forEach(function (fqaChild) {
     fqaAnswer = fqaChild.querySelector(".fqaAnswerParagraph");
     // fqaAnswer.style.display = "block";
     fqaAnswer.classList.toggle("active");
+    fqaQuestion = fqaChild.querySelector(".addRemoveIcon");
+    fqaQuestion.classList.toggle("fa-plus");
+    fqaQuestion.classList.toggle("fa-minus");
   });
 });
 
