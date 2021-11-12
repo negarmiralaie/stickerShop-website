@@ -96,7 +96,7 @@ body {
     margin-right: a;
   }
 
-  .topCardText{
+  .topCardText {
     margin-left: auto;
     width: 50%;
   }
@@ -160,22 +160,22 @@ body {
 
   h3 {
     text-align: center;
-    display: inline-block;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: .6rem;
   }
 
   h3:after {
-        position: absolute;
-        content: '';
-        height: 2px;
-        bottom: -1rem; 
-        margin: 0 auto;
-		  left: 0;
-        right: 0;
-		  width: 50%;
-		  background: var(--gray-500);
-    }
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -1rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 5%;
+    background: var(--gray-500);
+  }
 
   p {
     margin: 0.5rem;

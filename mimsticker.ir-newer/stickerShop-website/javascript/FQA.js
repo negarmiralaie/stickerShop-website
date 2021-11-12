@@ -92,9 +92,7 @@ const fqaArray = [
   fqaNo8,
 ];
 
-let article = document.createElement("article");
-article.classList.add("fqaArticle");
-article.setAttribute("id", "fqaArticle");
+let article = document.getElementById("fqaArticle");
 
 let fqaHeading = document.createElement("h3");
 fqaHeading.classList.add("fqaHeading");
@@ -126,6 +124,8 @@ Array.from(fqaChildArticleObj).forEach(function (fqaChild) {
     fqaQuestion.classList.toggle("fa-minus");
   });
 });
+let FolllowInstaAdd=document.getElementById("FolllowInstaAdd");
+document.body.insertBefore(fqaArticle, FolllowInstaAdd);
 
 
 
