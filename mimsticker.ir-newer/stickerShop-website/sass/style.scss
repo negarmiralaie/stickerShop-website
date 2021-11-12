@@ -155,7 +155,7 @@ body {
   }
 }
 
-.fqaArticle {
+.faqArticle {
   line-height: 1.9rem;
 
   h3 {
@@ -185,9 +185,9 @@ body {
     margin-top: 1.2rem;
   }
 
-  .fqaQuestionParagraph {
+  .faqQuestionParagraph {
     display: flex;
-    padding: .8rem 1rem;
+    padding: 1rem 1rem;
     cursor: pointer;
     border: solid;
     border-color: var(--gray-500);
@@ -208,10 +208,10 @@ body {
     background-color: var(--myPrimary);
   }
 
-  p.fqaAnswerParagraph {
+  p.faqAnswerParagraph {
     background-color: var(--gray-500);
     display: none;
-    padding: .8rem 1rem;
+    padding: 1rem 1rem;
     overflow: hidden;
     overflow-y: auto;
     transition: 0.5s;
@@ -219,7 +219,7 @@ body {
     // height: 0; //another way for creating the accordion
   }
 
-  p.fqaAnswerParagraph.active {
+  p.faqAnswerParagraph.active {
     display: block;
     // height: 10vh;  //another way for creatting the accordion
   }

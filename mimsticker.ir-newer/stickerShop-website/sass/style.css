@@ -181,18 +181,18 @@ body {
   }
 }
 
-.fqaArticle {
+.faqArticle {
   line-height: 1.9rem;
 }
 
-.fqaArticle h3 {
+.faqArticle h3 {
   text-align: center;
   position: relative;
   margin-bottom: 3rem;
   padding-bottom: .6rem;
 }
 
-.fqaArticle h3:after {
+.faqArticle h3:after {
   position: absolute;
   content: '';
   height: 3px;
@@ -204,26 +204,26 @@ body {
   background: var(--gray-500);
 }
 
-.fqaArticle p {
+.faqArticle p {
   margin: 0.5rem;
 }
 
-.fqaArticle article {
+.faqArticle article {
   margin-top: 1.2rem;
 }
 
-.fqaArticle .fqaQuestionParagraph {
+.faqArticle .faqQuestionParagraph {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: .8rem 1rem;
+  padding: 1rem 1rem;
   cursor: pointer;
   border: solid;
   border-color: var(--gray-500);
   margin-bottom: 0;
 }
 
-.fqaArticle .addRemoveIcon {
+.faqArticle .addRemoveIcon {
   margin: auto auto auto 0;
   width: 1.6rem;
   height: 1.6rem;
@@ -233,14 +233,14 @@ body {
   background: var(--gray-500);
 }
 
-.fqaArticle .addRemoveIcon:hover {
+.faqArticle .addRemoveIcon:hover {
   background-color: var(--myPrimary);
 }
 
-.fqaArticle p.fqaAnswerParagraph {
+.faqArticle p.faqAnswerParagraph {
   background-color: var(--gray-500);
   display: none;
-  padding: .8rem 1rem;
+  padding: 1rem 1rem;
   overflow: hidden;
   overflow-y: auto;
   -webkit-transition: 0.5s;
@@ -248,7 +248,7 @@ body {
   margin-top: 0;
 }
 
-.fqaArticle p.fqaAnswerParagraph.active {
+.faqArticle p.faqAnswerParagraph.active {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */
