@@ -188,6 +188,20 @@ body {
 .fqaArticle h3 {
   text-align: center;
   display: inline-block;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.fqaArticle h3:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -1rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  background: var(--gray-500);
 }
 
 .fqaArticle p {
