@@ -28,6 +28,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: "shabnamFont", "vazirFont";
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  h2,h3,h4{
+    font-weight: inherit;
+  }
 }
 
 * {
@@ -223,4 +239,14 @@ body {
     display: block;
     // height: 10vh;  //another way for creatting the accordion
   }
+}
+
+.folllowInstaAdd {
+  margin-top: 4rem;
+
+  // svg{
+  //   width: 100%;
+  //   max-height: 5%;
+  // }
+
 }
