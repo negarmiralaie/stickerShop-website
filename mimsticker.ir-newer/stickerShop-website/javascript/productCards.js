@@ -1,4 +1,3 @@
-// const body = document.body;
 let productNo = 0;
 const bestSellesElement = document.getElementById("bestSelles");
 const bestSellProductsElement = document.getElementById("bestSellProducts");
@@ -7,8 +6,6 @@ class productCard {
         this.productImgSrc = productImgSrc;
         this.productName = productName;
         this.productPrice = productPrice;
-
-        // console.log(this.productImgSrc, this.productName, this.productPrice);
     }
 }
 
@@ -17,7 +14,6 @@ class placeCards {
         this.parentSectionId = parentSectionId;
         this.parentSectionElement = document.createElement("section");
         this.parentSectionElement.setAttribute("id", parentSectionId);
-        // this.parentSectionElement = document.getElementById(parentSectionId);
     }
     makeSectionWith4childSections(
         productCard1,
@@ -32,9 +28,6 @@ class placeCards {
         console.log(this.parentSectionElement);
         this.parentSectionElement.append(this.sectionWith4childSections);
         bestSellesElement.append(this.parentSectionElement);
-        // bestSellesElement;
-        // document.body.insertBefore(faqArticle, FolllowInstaAdd);
-
     }
 
     makeSectionWith2childSections(productCard1, productCard2) {
