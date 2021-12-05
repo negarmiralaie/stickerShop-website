@@ -275,18 +275,20 @@ body {
   }
 }
 
-.BestSelles {
+.bestSelles {
   background-color: #46a9e0;
   margin-top: 1rem;
+  width: 100vw;
+  height: 300px;
 }
 
 .sectionWith4childSections {
-  background-color: saddlebrown;
+  // background-color: saddlebrown;
   display: flex;
   flex-direction: column;
 
   .sectionWith2childSections {
-    background-color: seagreen;
+    // background-color: seagreen;
     display: flex;
   }
 

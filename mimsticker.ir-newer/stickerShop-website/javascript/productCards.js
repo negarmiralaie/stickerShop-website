@@ -31,7 +31,7 @@ class placeCards {
         this.makeSectionWith2childSections(productCard3, productCard4);
         console.log(this.parentSectionElement);
         this.parentSectionElement.append(this.sectionWith4childSections);
-        body.append(this.parentSectionElement);
+        bestSellesElement.append(this.parentSectionElement);
         // bestSellesElement;
         // document.body.insertBefore(faqArticle, FolllowInstaAdd);
 

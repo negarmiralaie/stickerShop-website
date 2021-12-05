@@ -310,13 +310,14 @@ body h4 {
   transition: .56s;
 }
 
-.BestSelles {
+.bestSelles {
   background-color: #46a9e0;
   margin-top: 1rem;
+  width: 100vw;
+  height: 300px;
 }
 
 .sectionWith4childSections {
-  background-color: saddlebrown;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,7 +328,6 @@ body h4 {
 }
 
 .sectionWith4childSections .sectionWith2childSections {
-  background-color: seagreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
