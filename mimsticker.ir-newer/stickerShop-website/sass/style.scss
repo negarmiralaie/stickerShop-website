@@ -276,47 +276,73 @@ body {
 }
 
 .bestSelles {
-  background-color: #46a9e0;
-  margin-top: 1rem;
-  width: 100vw;
-  height: 300px;
-}
-
-.sectionWith4childSections {
-  // background-color: saddlebrown;
+  // background-color: #46a9e0;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
 
-  .sectionWith2childSections {
-    // background-color: seagreen;
+  .sectionWith4childSections {
+    background-color: saddlebrown;
+    width: 100%;
     display: flex;
-  }
+    flex-direction: column;
+    justify-content: space-around;
 
-  .productName {
-    font-size: 16px;
-    color: #2C2C2D;
-    line-height: 16px;
-    cursor: pointer;
-  }
+    .sectionWith2childSections {
+      background-color: seagreen;
+      display: flex;
+      justify-content: space-between;
 
-  .productPrice {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 16px;
-    color: #6B7C93;
-    cursor: pointer;
+      .productCard {
+        background-color: slateblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+
+        .productImg{
+          background-color: springgreen;
+          width: 100%;
+
+          img{
+            width: 100%;
+          }
+        }
+
+        .productName{
+          color: #2C2C2D;
+          font-size: 16px;
+          line-height: 16px;
+          cursor: pointer;
+        }
+
+        .productPrice {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 16px;
+          color: #6B7C93;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 
-@media screen and(min-width: 980) {
-  .sectionWith4childSections {
+@media(min-width: 980px) {
+  .bestSelles .sectionWith4childSections {
     background-color: skyblue;
+    display: flex;
     flex-direction: row;
   }
 }
 
 .productCard {
-  background-color: salmon;
+  // background-color: salmon;
   display: flex;
   flex-direction: column;
   width: 100px;

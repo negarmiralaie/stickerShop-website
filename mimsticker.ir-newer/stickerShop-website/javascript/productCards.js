@@ -23,6 +23,10 @@ class placeCards {
     ) {
         this.sectionWith4childSections = document.createElement("section");
         this.sectionWith4childSections.classList.add("sectionWith4childSections");
+        this.sectionWith4childSections.setAttribute(
+          "id",
+          "sectionWith4childSections"
+        );
         this.makeSectionWith2childSections(productCard1, productCard2);
         this.makeSectionWith2childSections(productCard3, productCard4);
         console.log(this.parentSectionElement);
@@ -41,6 +45,7 @@ class placeCards {
 
     makeProductImgElement(productCard) {
         this.productImgElement = document.createElement("img");
+        this.productImgElement.classList.add("productImg");
         this.productImgElement.src = productCard.productImgSrc;
         this.productCard.append(this.productImgElement);
     }
