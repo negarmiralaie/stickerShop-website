@@ -297,7 +297,7 @@ body h2, body h3, body h4 {
 
 .folllowInstaAdd .followInstaCards img {
   width: 100%;
-  max-width: 270px;
+  max-width: 170px;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   margin-bottom: 2rem;
