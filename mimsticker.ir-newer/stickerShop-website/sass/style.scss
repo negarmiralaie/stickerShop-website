@@ -228,15 +228,20 @@ body {
 }
 
 .folllowInstaAdd {
-  margin-top: 4rem;
+  margin: 4rem 0;
+  position: relative;
 
   .follownInstaSection{
     display: flex;
     flex-direction: column;
+    background-color: #F6F6F6;
+    margin: 0;
+    position: absolute;
+    top: 34px;
     
     button{
-      background-color: #000;
-      margin: 1rem auto 2rem auto;
+      background-color: #fff;
+      margin: 0 auto 2rem auto;
       padding: 1rem;
       max-width: 17rem;
       border-radius: 100px;
