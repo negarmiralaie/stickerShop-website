@@ -73,6 +73,7 @@ body h2, body h3, body h4 {
   min-height: 10vh;
   font-weight: bold;
   border: none;
+  color: white;
 }
 
 .navButtons :nth-child(2) {
