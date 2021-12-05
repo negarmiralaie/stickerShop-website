@@ -129,7 +129,6 @@ body h2, body h3, body h4 {
 .bottomCard img {
   width: 100%;
   min-height: 100%;
-  margin-right: a;
 }
 
 .topCard .topCardText,
@@ -305,19 +304,46 @@ body h2, body h3, body h4 {
   transition: .56s;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1020px) {
   .topCard,
   .bottomCard {
+    background-color: red;
+    width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .topCard .topCardimg,
+  .bottomCard .topCardimg {
+    background-color: seagreen;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .topCard .topCardText,
+  .topCard .bottomCardText,
+  .bottomCard .topCardText,
+  .bottomCard .bottomCardText {
+    background-color: springgreen;
+    width: 40%;
+    padding: 0;
+    margin: 0;
   }
   .topCard .bottomCardText,
   .bottomCard .bottomCardText {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    background-color: sienna;
+  }
+  .topCard {
+    background-color: salmon;
   }
   .navButtons {
     -webkit-box-orient: horizontal;

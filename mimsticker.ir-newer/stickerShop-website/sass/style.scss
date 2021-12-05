@@ -110,7 +110,7 @@ body {
   img {
     width: 100%;
     min-height: 100%;
-    margin-right: a;
+    // margin-right: a;
   }
 
   .topCardText {
@@ -250,10 +250,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    // display: grid;
-    // grid-template-areas: "aaa bbb"
-    //                       "ccc ddd"
-    //                       "eee fff";
     
     img{
       width: 100%;
@@ -266,38 +262,43 @@ body {
       filter: none;
       transition: .56s;
     }
-
-    // :nth-child(1){
-    //   grid-area: a;
-    // }
-    // :nth-child(2){
-    //   grid-area: b;
-    // }
-    // :nth-child(3){
-    //   grid-area: c;
-    // }
-    // :nth-child(4){
-    //   grid-area: d;
-    // }
-    // :nth-child(5){
-    //   grid-area: e;
-    // }
-    // :nth-child(6){
-    //   grid-area: f;
-    // }
   }
-
 }
 
-@media screen and(min-width: 1024px) {
+@media screen and(min-width: 1020px) {
 
   .topCard,
   .bottomCard {
+    background-color: red;
+    width: 100%;
     flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    .topCardimg{
+      background-color: seagreen;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .topCardText,
+    .bottomCardText{
+      background-color: springgreen;
+     width: 40%;
+      padding: 0;
+      margin: 0;
+    }
 
     .bottomCardText {
       order: -1;
+      background-color: sienna;
     }
+  }
+
+  .topCard{
+    background-color: salmon;
   }
 
   .navButtons {
