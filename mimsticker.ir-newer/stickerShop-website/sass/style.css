@@ -239,7 +239,7 @@ body h2, body h3, body h4 {
 }
 
 .faqArticle p.faqAnswerParagraph {
-  background-color: var(--gray-500);
+  background-color: var(--gray-100);
   display: none;
   padding: 1rem 1rem;
   overflow: hidden;
