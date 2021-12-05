@@ -2,7 +2,7 @@
   --myPrimary: #46a9e0;
   --gray: #6b7c93;
   --gray-500: #202020;
-  --gray-100: rgb(241,243,245);
+  --gray-100: rgb(241, 243, 245);
 }
 
 @font-face {
@@ -43,7 +43,9 @@ body a {
   color: inherit;
 }
 
-body h2, body h3, body h4 {
+body h2,
+body h3,
+body h4 {
   font-weight: inherit;
 }
 
@@ -268,8 +270,6 @@ body h2, body h3, body h4 {
           flex-direction: column;
   background-color: #F6F6F6;
   margin: 0;
-  position: absolute;
-  top: 34px;
 }
 
 .folllowInstaAdd .follownInstaSection button {
@@ -312,19 +312,63 @@ body h2, body h3, body h4 {
 
 .BestSelles {
   background-color: #46a9e0;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
-.BestSelles .sectionWith4childSections {
-  background-color: red;
+.sectionWith4childSections {
+  background-color: saddlebrown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.BestSelles .sectionWith4childSections img {
-  width: 50px;
+.sectionWith4childSections .sectionWith2childSections {
+  background-color: seagreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sectionWith4childSections .productName {
+  font-size: 16px;
+  color: #2C2C2D;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.sectionWith4childSections .productPrice {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #6B7C93;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 980) {
+  .sectionWith4childSections {
+    background-color: skyblue;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .productCard {
   background-color: salmon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100px;
+  min-height: 100px;
 }
 
 .productCard img {
