@@ -2,6 +2,7 @@
   --myPrimary: #46a9e0;
   --gray: #6b7c93;
   --gray-500: #202020;
+  --gray-100: rgb(241,243,245);
 }
 
 @font-face {
@@ -191,7 +192,7 @@ body {
     padding: 1rem 1rem;
     cursor: pointer;
     border: solid;
-    border-color: var(--gray-500);
+    border-color: var(--gray-100);
     margin-bottom: 0;
   }
 
@@ -202,7 +203,7 @@ body {
     border-radius: .8rem;
     line-height: 1.6rem;
     text-align: center;
-    background: var(--gray-500);
+    background: var(--gray-100);
   }
 
   .addRemoveIcon:hover {
