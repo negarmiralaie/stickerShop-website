@@ -137,16 +137,22 @@ body {
 }
 
 .topCard {
+  background-color: turquoise;
+  width: 100%;
   .topCardText {
-    max-width: 100%;
+    width: 100%;
     margin: 5px auto 25px auto;
+    background-color: var(--gray);
   }
 }
 
 .bottomCard {
+  background-color: violet;
+  width: 100%;
   .bottomCardText {
     order: 1;
     margin: 5px auto 25px auto;
+    background-color: yellowgreen;
   }
 }
 
