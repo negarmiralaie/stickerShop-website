@@ -271,6 +271,25 @@ body {
   }
 }
 
+.BestSelles{
+  background-color: #46a9e0;
+  margin-top: 4rem;
+
+  .sectionWith4childSections{
+    background-color: red;
+
+    img{
+      width: 50px;
+    }
+  }
+}
+
+.productCard{
+  background-color: salmon;
+  img{
+    width: 50px;
+  }
+}
 @media screen and(min-width: 1020px) {
 
   .topCard,
