@@ -75,18 +75,3 @@ class placeCards {
         productNo++;
     }
 }
-
-let allStoredProductCards = [];
-
-let card1 = new productCard("../cardsImages/1-1.jpg", "استیکر عینک اسنوپ داگ", "۳٫۹۲۰تومان");
-let card2 = new productCard("../cardsImages/2-1.jpg", "استیکر دایناسور آفلاین", "۳٫۹۲۰تومان");
-let card3 = new productCard("../cardsImages/3-1.jpg", "استیکر شارژ 1درصد", "۳٫۹۲۰تومان");
-let card4 = new productCard("../cardsImages/4-1.jpg", "استیکر متن", "۳٫۹۲۰تومان");
-
-allStoredProductCards.push(card1);
-allStoredProductCards.push(card2);
-allStoredProductCards.push(card3);
-allStoredProductCards.push(card4);
-
-let placeCards1 = new placeCards("firstSectionWith4Childs");
-placeCards1.makeSectionWith4childSections(card1, card2, card3, card4);

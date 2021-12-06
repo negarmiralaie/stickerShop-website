@@ -294,6 +294,7 @@ body {
     .sectionWith2childSections {
       background-color: seagreen;
       display: flex;
+      flex-direction: row-reverse;
       justify-content: space-between;
 
       .productCard {
@@ -337,7 +338,7 @@ body {
   .bestSelles .sectionWith4childSections {
     background-color: skyblue;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 }
 
