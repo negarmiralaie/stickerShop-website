@@ -429,6 +429,7 @@ body h4 {
   border: solid #BBC3CE 1px;
   width: 130px;
   height: 45px;
+  text-align: center;
 }
 
 .bestSellesNavigator .pageNavigatorShow p {
