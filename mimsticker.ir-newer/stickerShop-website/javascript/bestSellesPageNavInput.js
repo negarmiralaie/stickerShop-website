@@ -22,10 +22,11 @@ if (bestSellesPageNavInputElement.value == lastBestSellsPageNo) {
 
 //if bestSellesNextPageBtn in clecked, go to next page and change input value
 bestSellesNextPageBtn.addEventListener("click", event => {
-    if (bestSellesPageNavInputElement.value == lastBestSellsPageNo) {
+    if (bestSellesPageNavInputElement.value != lastBestSellsPageNo) {
         //if pageNo is not 1, increase input page number each time next btn is clicked
         bestSellesPageNavInputElement.value =
             parseInt(bestSellesPageNavInputElement.value) + 1;
+        bestSellesPreviousPageBtn.style.cursor = "pointer";
     }
 });
 
@@ -35,5 +36,6 @@ bestSellesPreviousPageBtn.addEventListener("click", event => {
         //if pageNo is not max page number, decrease input page number each time previous btn is clicked
         bestSellesPageNavInputElement.value =
             parseInt(bestSellesPageNavInputElement.value) - 1;
+        bestSellesNextPageBtn.style.cursor = "pointer";
     }
 });
