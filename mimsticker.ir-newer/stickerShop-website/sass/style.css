@@ -311,6 +311,7 @@ body h4 {
 }
 
 .bestSelles {
+  background-color: #46a9e0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,9 +320,6 @@ body h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -330,7 +328,6 @@ body h4 {
 
 .bestSelles .sectionWith4childSections {
   background-color: saddlebrown;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,10 +351,10 @@ body h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100vw;
 }
 
 .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard {
-  background-color: slateblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,6 +370,7 @@ body h4 {
           align-items: center;
   gap: 10px;
   text-align: center;
+  width: 50vw;
 }
 
 .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productImg {
@@ -400,6 +398,9 @@ body h4 {
 }
 
 @media (min-width: 980px) {
+  body {
+    background-color: red;
+  }
   .bestSelles .sectionWith4childSections {
     background-color: skyblue;
     display: -webkit-box;
@@ -409,23 +410,18 @@ body h4 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    background-color: sandybrown;
   }
-}
-
-.productCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100px;
-  min-height: 100px;
-}
-
-.productCard img {
-  width: 50px;
+  .bestSelles .sectionWith4childSections .sectionWith2childSections {
+    background-color: sienna;
+    width: 50vw;
+  }
+  .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productImg {
+    background-color: yellow;
+  }
+  .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productImg img {
+    width: 30vw;
+  }
 }
 
 @media screen and (min-width: 1020px) {
