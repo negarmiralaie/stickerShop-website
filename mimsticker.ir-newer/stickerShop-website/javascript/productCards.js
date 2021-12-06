@@ -1,6 +1,8 @@
 let productNo = 0;
 const bestSellesElement = document.getElementById("bestSelles");
-const bestSellProductsElement = document.getElementById("bestSellProducts");
+const bestSellesNavigatorElement = document.getElementById(
+  "bestSellesNavigator"
+);
 class productCard {
     constructor(productImgSrc, productName, productPrice) {
         this.productImgSrc = productImgSrc;

@@ -336,6 +336,63 @@ body {
   }
 }
 
+.bestSellesNavigator {
+  background-color: #EDEEF4;
+  min-height: 69px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .pageNavigatorShow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+
+    input {
+      border: solid #BBC3CE 1px;
+      width: 130px;
+      height: 45px;
+    }
+
+    p{
+      margin: auto 0;
+    }
+  }
+
+  .previousPageButton,
+  .nextPageButton {
+
+    button {
+      background-color: var(--myPrimary);
+      color: white;
+      padding: 0 1rem;
+      width: 10rem;
+      height: 3rem;
+      border: none;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+
+      p {
+        margin: auto 0 auto auto;
+      }
+    }
+  }
+
+  .nextPageButton button p {
+    margin: auto 0 auto auto;
+  }
+
+  .previousPageButton button p {
+    margin: auto auto auto 0;
+  }
+}
+
+
+
 @media(min-width: 980px) {
 
   body {
@@ -348,12 +405,12 @@ body {
     flex-direction: row-reverse;
     background-color: sandybrown;
 
-    .sectionWith2childSections{
+    .sectionWith2childSections {
       background-color: sienna;
       width: 50vw;
     }
 
-    .sectionWith2childSections .productCard .productImg{
+    .sectionWith2childSections .productCard .productImg {
       background-color: yellow;
 
       img {

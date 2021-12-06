@@ -397,6 +397,77 @@ body h4 {
   cursor: pointer;
 }
 
+.bestSellesNavigator {
+  background-color: #EDEEF4;
+  min-height: 69px;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bestSellesNavigator .pageNavigatorShow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+.bestSellesNavigator .pageNavigatorShow input {
+  border: solid #BBC3CE 1px;
+  width: 130px;
+  height: 45px;
+}
+
+.bestSellesNavigator .pageNavigatorShow p {
+  margin: auto 0;
+}
+
+.bestSellesNavigator .previousPageButton button,
+.bestSellesNavigator .nextPageButton button {
+  background-color: var(--myPrimary);
+  color: white;
+  padding: 0 1rem;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.bestSellesNavigator .previousPageButton button p,
+.bestSellesNavigator .nextPageButton button p {
+  margin: auto 0 auto auto;
+}
+
+.bestSellesNavigator .nextPageButton button p {
+  margin: auto 0 auto auto;
+}
+
+.bestSellesNavigator .previousPageButton button p {
+  margin: auto auto auto 0;
+}
+
 @media (min-width: 980px) {
   body {
     background-color: red;
