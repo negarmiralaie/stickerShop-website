@@ -178,6 +178,18 @@ let card62 = new productCard(
   "۳٫۹۲۰تومان"
 );
 
+let card63 = new productCard(
+  "../cardsImages/bestSellsPage2/63-1.jpg",
+  "استیکر عینک اسنوپ داگ",
+  "۳٫۹۲۰تومان"
+);
+
+let card64 = new productCard(
+  "../cardsImages/bestSellsPage2/64-1.jpg",
+  "استیکر عینک اسنوپ داگ",
+  "۳٫۹۲۰تومان"
+);
+
 allStoredProductCards.push(card33);
 allStoredProductCards.push(card34);
 allStoredProductCards.push(card35);
@@ -208,3 +220,5 @@ allStoredProductCards.push(card59);
 allStoredProductCards.push(card60);
 allStoredProductCards.push(card61);
 allStoredProductCards.push(card62);
+allStoredProductCards.push(card63);
+allStoredProductCards.push(card64);
