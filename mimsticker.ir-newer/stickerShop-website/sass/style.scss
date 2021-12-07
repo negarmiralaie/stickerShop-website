@@ -294,7 +294,7 @@ body {
     .sectionWith2childSections {
       // background-color: seagreen;
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: row;
       justify-content: space-between;
       gap: 20px;
       width: 100vw;
@@ -406,10 +406,12 @@ body {
     display: flex;
     flex-direction: row-reverse;
     // background-color: sandybrown;
+    direction: rtl;
     gap: 20px;
 
     .sectionWith2childSections {
-      // background-color: sienna;
+      background-color: sienna;
+      flex-direction: row-reverse;
       width: 50vw;
     }
 

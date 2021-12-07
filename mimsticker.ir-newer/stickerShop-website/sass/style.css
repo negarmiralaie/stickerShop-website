@@ -342,9 +342,9 @@ body h4 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -478,9 +478,15 @@ body h4 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    direction: rtl;
     gap: 20px;
   }
   .bestSelles .sectionWith4childSections .sectionWith2childSections {
+    background-color: sienna;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     width: 50vw;
   }
   .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productImg {

@@ -23,37 +23,37 @@ let card4 = new productCard(
 
 let card5 = new productCard(
   "../cardsImages/5-1.jpg",
-  "استیکر متن",
+  "استیکر مجسمه یونانی",
   "۳٫۹۲۰تومان"
 );
 
 let card6 = new productCard(
   "../cardsImages/6-1.jpg",
-  "استیکر مجسمه یونانی",
+  "استیکر اختاپوس ",
   "۳٫۹۲۰تومان"
 );
 
 let card7 = new productCard(
   "../cardsImages/7-1.jpg",
-  "استیکر اختاپوس",
+  " استیکر NASA",
   "۳٫۹۲۰تومان"
 );
 
 let card8 = new productCard(
   "../cardsImages/8-1.jpg",
-  "استیکر لوگو NASA",
+  "استیکر متن ",
   "۳٫۹۲۰تومان"
 );
 
 let card9 = new productCard(
   "../cardsImages/9-1.jpg",
-  "استیکر Xxx Tenaction",
+  "استیکر wasted ",
   "۳٫۹۲۰تومان"
 );
 
 let card10 = new productCard(
   "../cardsImages/10-1.jpg",
-  "استیکر wasted",
+  "استیکر supreme",
   "۳٫۹۲۰تومان"
 );
 
@@ -71,40 +71,40 @@ let card12 = new productCard(
 
 let card13 = new productCard(
   "../cardsImages/13-1.jpg",
-  "استیکر گربه",
+  "استیکر مجسمه یونانی",
   "۳٫۹۲۰تومان"
 );
 
 let card14 = new productCard(
   "../cardsImages/14-1.jpg",
-  "استیکر پاتریک",
+  "استیکر گربه",
   "۳٫۹۲۰تومان"
 );
 
 let card15 = new productCard(
   "../cardsImages/15-1.jpg",
-  "استیکر Alien",
+  "استیکر Xxx Tenaction",
   "۳٫۹۲۰تومان"
 );
 
 let card16 = new productCard(
   "../cardsImages/16-1.jpg",
-  "استیکر supreme",
+  "استیکر Alien",
   "۳٫۹۲۰تومان"
 );
 
 let card17 = new productCard(
   "../cardsImages/17-1.jpg",
-  "استیکر لوگو بسکتبال",
+  "استیکر WTF",
   "۳٫۹۲۰تومان"
 );
 
 let card18 = new productCard(
   "../cardsImages/18-1.jpg",
-  "استیکر Rick and Morty",
+  " استیکر astronaut",
   "۳٫۹۲۰تومان"
 );
-
+// Rick and Morty
 let card19 = new productCard(
   "../cardsImages/19-1.jpg",
   "استیکر سیاره ها",
@@ -113,54 +113,54 @@ let card19 = new productCard(
 
 let card20 = new productCard(
   "../cardsImages/20-1.jpg",
-  "استیکر مجسمه یونانی",
+  "استیکر پاتریک",
   "۳٫۹۲۰تومان"
 );
 
 let card21 = new productCard(
   "../cardsImages/21-1.jpg",
-  "استیکر متن",
+  "استیکر توپ بسکتبال",
   "۳٫۹۲۰تومان"
 );
 
 let card22 = new productCard(
   "../cardsImages/22-1.jpg",
-  "استیکر Call Of Duty",
+  "استیکر spotify ",
   "۳٫۹۲۰تومان"
 );
 
 let card23 = new productCard(
   "../cardsImages/23-1.jpg",
-  "استیکر میم گربه",
+  "استیکر پیتزا",
   "۳٫۹۲۰تومان"
 );
 
 let card24 = new productCard(
   "../cardsImages/24-1.jpg",
-  "استیکر astronaut",
+  "استیکر متن",
   "۳٫۹۲۰تومان"
 );
 let card25 = new productCard(
   "../cardsImages/25-1.jpg",
-  "استیکر WTF",
+  "استیکر متن",
   "۳٫۹۲۰تومان"
 );
 
 let card26 = new productCard(
   "../cardsImages/26-1.jpg",
-  "استیکر spotify",
+  "استیکر Call Of Duty",
   "۳٫۹۲۰تومان"
 );
 
 let card27 = new productCard(
   "../cardsImages/27-1.jpg",
-  "استیکر پیتزا",
+  "استیکر Rick and Morty",
   "۳٫۹۲۰تومان"
 );
 
 let card28 = new productCard(
   "../cardsImages/28-1.jpg",
-  "استیکر Rick and Morty",
+  "استیکر میم گربه",
   "۳٫۹۲۰تومان"
 );
 
@@ -184,7 +184,7 @@ let card31 = new productCard(
 
 let card32 = new productCard(
   "../cardsImages/32-1.jpg",
-  "استیکر متن",
+  "استیکر Rick and Morty",
   "۳٫۹۲۰تومان"
 );
 

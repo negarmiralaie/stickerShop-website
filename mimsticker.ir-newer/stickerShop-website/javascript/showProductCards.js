@@ -1,4 +1,4 @@
-let placeCards1;
+// let placeCards1;
 
 function showBestSellsPage1() {
   placeCards1 = new placeCards("firstSectionWith4Childs");

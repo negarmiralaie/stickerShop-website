@@ -1,6 +1,6 @@
 let card33 = new productCard(
   "../cardsImages/bestSellsPage2/33-1.jpg",
-  "استیکر عینک اسنوپ داگ",
+  "استیکر لوگو راک استار",
   "۳٫۹۲۰تومان"
 );
 
