@@ -1,5 +1,5 @@
 let productNo = 0;
-const bestSellesElement = document.getElementById("bestSelles");
+let bestSellesElement = document.getElementById("bestSelles");
 const bestSellesNavigatorElement = document.getElementById(
   "bestSellesNavigator"
 );
@@ -31,7 +31,6 @@ class placeCards {
         );
         this.makeSectionWith2childSections(productCard1, productCard2);
         this.makeSectionWith2childSections(productCard3, productCard4);
-        console.log(this.parentSectionElement);
         this.parentSectionElement.append(this.sectionWith4childSections);
         bestSellesElement.append(this.parentSectionElement);
     }
@@ -42,7 +41,6 @@ class placeCards {
         this.make1ProductCard(productCard1);
         this.make1ProductCard(productCard2);
         this.sectionWith4childSections.append(this.sectionWith2childSections);
-        console.log(this.sectionWith4childSections);
     }
 
     makeProductImgElement(productCard) {
