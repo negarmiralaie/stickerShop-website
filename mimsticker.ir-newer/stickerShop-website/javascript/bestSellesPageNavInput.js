@@ -11,9 +11,10 @@ let bestSellesPreviousPageBtn = document.getElementById(
 bestSellesPageNavInputElement.value = 1;
 bestSellesPreviousPageBtn.style.backgroundColor = "gray";
 
-// bestSellesPageNavInputElement.addEventListener("input", event => {
-
-// })
+bestSellesPageNavInputElement.addEventListener("input", event => {
+    bestSellesCurrentPage = bestSellesPageNavInputElement.value;
+    showBestSellPages();
+})
 
 //click next page
 bestSellesNextPageBtn.addEventListener("click", event => {
