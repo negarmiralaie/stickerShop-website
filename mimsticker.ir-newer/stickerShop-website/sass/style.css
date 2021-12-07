@@ -311,7 +311,6 @@ body h4 {
 }
 
 .bestSelles {
-  background-color: #46a9e0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,7 +326,6 @@ body h4 {
 }
 
 .bestSelles .sectionWith4childSections {
-  background-color: saddlebrown;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,7 +338,6 @@ body h4 {
 }
 
 .bestSelles .sectionWith4childSections .sectionWith2childSections {
-  background-color: seagreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,6 +348,7 @@ body h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 20px;
   width: 100vw;
 }
 
@@ -374,7 +372,6 @@ body h4 {
 }
 
 .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productImg {
-  background-color: springgreen;
   width: 100%;
 }
 
@@ -474,7 +471,6 @@ body h4 {
     background-color: red;
   }
   .bestSelles .sectionWith4childSections {
-    background-color: skyblue;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -482,10 +478,9 @@ body h4 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    background-color: sandybrown;
+    gap: 20px;
   }
   .bestSelles .sectionWith4childSections .sectionWith2childSections {
-    background-color: sienna;
     width: 50vw;
   }
   .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productImg {
@@ -522,7 +517,6 @@ body h4 {
   .topCard .bottomCardText,
   .bottomCard .topCardText,
   .bottomCard .bottomCardText {
-    background-color: springgreen;
     width: 40%;
     padding: 0;
     margin: 0;

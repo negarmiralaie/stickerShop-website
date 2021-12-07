@@ -276,7 +276,7 @@ body {
 }
 
 .bestSelles {
-  background-color: #46a9e0;
+  // background-color: #46a9e0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -285,17 +285,18 @@ body {
   margin-top: 1rem;
 
   .sectionWith4childSections {
-    background-color: saddlebrown;
+    // background-color: saddlebrown;
     // width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
     .sectionWith2childSections {
-      background-color: seagreen;
+      // background-color: seagreen;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+      gap: 20px;
       width: 100vw;
 
       .productCard {
@@ -309,7 +310,7 @@ body {
         width: 50vw;
 
         .productImg {
-          background-color: springgreen;
+          // background-color: springgreen;
           width: 100%;
 
           img {
@@ -401,13 +402,14 @@ body {
   }
 
   .bestSelles .sectionWith4childSections {
-    background-color: skyblue;
+    // background-color: skyblue;
     display: flex;
     flex-direction: row-reverse;
-    background-color: sandybrown;
+    // background-color: sandybrown;
+    gap: 20px;
 
     .sectionWith2childSections {
-      background-color: sienna;
+      // background-color: sienna;
       width: 50vw;
     }
 
@@ -441,7 +443,7 @@ body {
 
     .topCardText,
     .bottomCardText {
-      background-color: springgreen;
+      // background-color: springgreen;
       width: 40%;
       padding: 0;
       margin: 0;
