@@ -3,8 +3,7 @@ let bestSellesCurrentPage;
 let bestSellesPageNavInputElement = document.getElementById(
   "bestSellesPageNavInput"
 );
-console.log(typeof localStorage.getItem("bestSellesCurrentPage"));
-console.log(localStorage.getItem("bestSellesCurrentPage"));
+
 if (
   JSON.parse(localStorage.getItem("bestSellesCurrentPage")) == "1" ||
   JSON.parse(localStorage.getItem("bestSellesCurrentPage")) == "2" ||
@@ -13,15 +12,8 @@ if (
   bestSellesCurrentPage = parseInt(
     JSON.parse(localStorage.getItem("bestSellesCurrentPage"))
   );
-  console.log("local",parseInt(
-    localStorage.getItem("bestSellesCurrentPage")
-  ))
   bestSellesPageNavInputElement.value = parseInt(bestSellesCurrentPage);
-  console.log("bestSellesCurrentPage", bestSellesCurrentPage);
-  console.log(
-    "bestSellesPageNavInputElement.value",
-    bestSellesPageNavInputElement.value
-  );
+  showBestSellPages();
 } else {
   bestSellesCurrentPage = 1;
   localStorage.setItem(
@@ -29,9 +21,7 @@ if (
     JSON.stringify(bestSellesPageNavInputElement.value)
   );
   bestSellesPageNavInputElement.value = parseInt(bestSellesCurrentPage);
-  console.log("B");
 }
-
 
 let lastBestSellsPageNo = document.getElementById(
     "lastBestSellsPageNo"
@@ -43,23 +33,12 @@ let bestSellesPreviousPageBtn = document.getElementById(
     "bestSellesPreviousPageBtn"
 );
 
-// showBestSellPages();
-
 function updateLocalStorageCurrentBestSellsPage() {
-    console.log(
-      "bestSellesPageNavInputElement.value",
-      bestSellesPageNavInputElement.value
-    );
     localStorage.setItem(
         "bestSellesCurrentPage",
         JSON.stringify(bestSellesPageNavInputElement.value)
     );
-
-    bestSellesCurrentPage = bestSellesPageNavInputElement.value;
-    // bestSellesPageNavInputElement.value = parseInt(bestSellesCurrentPage);
-    
-
-    console.log("bestSellesCurrentPage", bestSellesCurrentPage);
+    bestSellesCurrentPage = bestSellesPageNavInputElement.value;  
 }
 
 bestSellesPageNavInputElement.addEventListener("input", (event) => {
@@ -78,16 +57,18 @@ bestSellesNextPageBtn.addEventListener("click", (event) => {
         bestSellesNextPageBtn.style.backgroundColor = "gray";
     }
 
-    //if bestSellesPreviousPageBtn in clicked, go to previous page and change input value
-    if (bestSellesPageNavInputElement.value != lastBestSellsPageNo) {
-        //if pageNo is not 1, increase input page number each time next btn is clicked
-        bestSellesPageNavInputElement.value =
-            parseInt(bestSellesPageNavInputElement.value) + 1;
-        bestSellesPreviousPageBtn.style.cursor = "pointer";
-        bestSellesPreviousPageBtn.style.backgroundColor = "#46a9e0";
-        // console.log(bestSellesPageNavInputElement.value);
-        updateLocalStorageCurrentBestSellsPage();
-        showBestSellPages();
+    //if bestSellesPreviousPageBtn is clicked, go to previous page and change input value
+    if (
+      parseInt(bestSellesPageNavInputElement.value)!=
+      parseInt(lastBestSellsPageNo)
+    ) {
+      //if pageNo is not 1, increase input page number each time next btn is clicked
+      bestSellesPageNavInputElement.value =
+        parseInt(bestSellesPageNavInputElement.value) + 1;
+      bestSellesPreviousPageBtn.style.cursor = "pointer";
+      bestSellesPreviousPageBtn.style.backgroundColor = "#46a9e0";
+      updateLocalStorageCurrentBestSellsPage();
+      showBestSellPages();
     }
 });
 
