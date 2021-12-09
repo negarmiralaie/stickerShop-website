@@ -320,7 +320,7 @@ body h6 {
 }
 
 .bestSelles {
-  width: 100%;
+  width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +331,9 @@ body h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1rem;
 }
 
