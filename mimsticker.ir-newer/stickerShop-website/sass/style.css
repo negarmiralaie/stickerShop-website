@@ -126,6 +126,7 @@ body h4 {
           justify-content: space-between;
   line-height: 40px;
   margin-top: 20px;
+  width: 100%;
 }
 
 .topCard img,
@@ -137,7 +138,9 @@ body h4 {
 .topCard .topCardText,
 .bottomCard .topCardText {
   margin-left: auto;
-  width: 50%;
+  padding: 1rem;
+  width: 100%;
+  margin: 5px auto 25px auto;
 }
 
 .topCard ul,
@@ -157,22 +160,11 @@ body h4 {
 
 .topCard input[type="button"],
 .bottomCard input[type="button"] {
-  background: var(--myPrimary);
-}
-
-.topCard {
-  background-color: turquoise;
-  width: 100%;
-}
-
-.topCard .topCardText {
-  width: 100%;
-  margin: 5px auto 25px auto;
-  background-color: var(--gray);
+  background-color: var(--myPrimary);
+  border-radius: 10px;
 }
 
 .bottomCard {
-  background-color: violet;
   width: 100%;
 }
 
@@ -181,7 +173,7 @@ body h4 {
       -ms-flex-order: 1;
           order: 1;
   margin: 5px auto 25px auto;
-  background-color: yellowgreen;
+  padding: 1rem;
 }
 
 .faqArticle {
@@ -192,12 +184,12 @@ body h4 {
   text-align: center;
   position: relative;
   margin-bottom: 3rem;
-  padding-bottom: .6rem;
+  padding-bottom: 0.6rem;
 }
 
 .faqArticle h3:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 3px;
   bottom: -1rem;
   margin: 0 auto;
@@ -230,7 +222,7 @@ body h4 {
   margin: auto auto auto 0;
   width: 1.6rem;
   height: 1.6rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   line-height: 1.6rem;
   text-align: center;
   background: var(--gray-100);
@@ -278,7 +270,7 @@ body h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin: 0;
 }
 
@@ -311,8 +303,8 @@ body h4 {
 .folllowInstaAdd .followInstaCards img:hover {
   -webkit-filter: none;
           filter: none;
-  -webkit-transition: .56s;
-  transition: .56s;
+  -webkit-transition: 0.56s;
+  transition: 0.56s;
 }
 
 .bestSelles {
@@ -385,7 +377,7 @@ body h4 {
 }
 
 .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productName {
-  color: #2C2C2D;
+  color: #2c2c2d;
   font-size: 16px;
   line-height: 16px;
   cursor: pointer;
@@ -395,12 +387,12 @@ body h4 {
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
-  color: #6B7C93;
+  color: #6b7c93;
   cursor: pointer;
 }
 
 .bestSellesNavigator {
-  background-color: #EDEEF4;
+  background-color: #edeef4;
   min-height: 69px;
   margin-top: 1rem;
   display: -webkit-box;
@@ -428,7 +420,7 @@ body h4 {
 }
 
 .bestSellesNavigator .pageNavigatorShow input {
-  border: solid #BBC3CE 1px;
+  border: solid #bbc3ce 1px;
   width: 130px;
   height: 45px;
   text-align: center;
@@ -519,7 +511,6 @@ body h4 {
   .bottomCard .topCardText,
   .bottomCard .bottomCardText {
     width: 40%;
-    padding: 0;
     margin: 0;
   }
   .topCard .bottomCardText,
@@ -527,9 +518,6 @@ body h4 {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-  }
-  .topCard {
-    background-color: salmon;
   }
   .navButtons {
     -webkit-box-orient: horizontal;

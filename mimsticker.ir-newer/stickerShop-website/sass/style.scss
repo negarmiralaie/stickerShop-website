@@ -109,16 +109,19 @@ body {
   justify-content: space-between;
   line-height: 40px;
   margin-top: 20px;
+  width: 100%;
 
   img {
     width: 100%;
     min-height: 100%;
-    // margin-right: a;
   }
 
   .topCardText {
     margin-left: auto;
-    width: 50%;
+    //width: 50%;
+    padding: 1rem;
+    width: 100%;
+    margin: 5px auto 25px auto;
   }
 
   ul {
@@ -135,29 +138,18 @@ body {
   }
 
   input[type="button"] {
-    background: var(--myPrimary);
-  }
-}
-
-.topCard {
-  background-color: turquoise;
-  width: 100%;
-
-  .topCardText {
-    width: 100%;
-    margin: 5px auto 25px auto;
-    background-color: var(--gray);
+    background-color: var(--myPrimary);
+    border-radius: 10px;
   }
 }
 
 .bottomCard {
-  background-color: violet;
   width: 100%;
 
   .bottomCardText {
     order: 1;
     margin: 5px auto 25px auto;
-    background-color: yellowgreen;
+    padding: 1rem;
   }
 }
 
@@ -168,12 +160,12 @@ body {
     text-align: center;
     position: relative;
     margin-bottom: 3rem;
-    padding-bottom: .6rem;
+    padding-bottom: 0.6rem;
   }
 
   h3:after {
     position: absolute;
-    content: '';
+    content: "";
     height: 3px;
     bottom: -1rem;
     margin: 0 auto;
@@ -204,7 +196,7 @@ body {
     margin: auto auto auto 0;
     width: 1.6rem;
     height: 1.6rem;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     line-height: 1.6rem;
     text-align: center;
     background: var(--gray-100);
@@ -248,7 +240,7 @@ body {
   .follownInstaSection {
     display: flex;
     flex-direction: column;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     margin: 0;
 
     button {
@@ -276,7 +268,7 @@ body {
 
     img:hover {
       filter: none;
-      transition: .56s;
+      transition: 0.56s;
     }
   }
 }
@@ -318,7 +310,7 @@ body {
         }
 
         .productName {
-          color: #2C2C2D;
+          color: #2c2c2d;
           font-size: 16px;
           line-height: 16px;
           cursor: pointer;
@@ -328,7 +320,7 @@ body {
           font-size: 16px;
           font-weight: 700;
           line-height: 16px;
-          color: #6B7C93;
+          color: #6b7c93;
           cursor: pointer;
         }
       }
@@ -337,7 +329,7 @@ body {
 }
 
 .bestSellesNavigator {
-  background-color: #EDEEF4;
+  background-color: #edeef4;
   min-height: 69px;
   margin-top: 1rem;
   display: flex;
@@ -351,7 +343,7 @@ body {
     width: 20%;
 
     input {
-      border: solid #BBC3CE 1px;
+      border: solid #bbc3ce 1px;
       width: 130px;
       height: 45px;
       text-align: center;
@@ -364,7 +356,6 @@ body {
 
   .previousPageButton,
   .nextPageButton {
-
     button {
       background-color: var(--myPrimary);
       color: white;
@@ -392,10 +383,7 @@ body {
   }
 }
 
-
-
-@media(min-width: 980px) {
-
+@media (min-width: 980px) {
   .bestSelles .sectionWith4childSections {
     display: flex;
     flex-direction: row-reverse;
@@ -407,7 +395,6 @@ body {
     }
 
     .sectionWith2childSections .productCard .productImg {
-
       img {
         width: 30vw;
       }
@@ -416,10 +403,9 @@ body {
 }
 
 @media screen and(min-width: 1020px) {
-
   .topCard,
   .bottomCard {
-        width: 100%;
+    width: 100%;
     flex-direction: row;
     align-items: center;
     margin: 0;
@@ -434,17 +420,13 @@ body {
     .topCardText,
     .bottomCardText {
       width: 40%;
-      padding: 0;
+      // padding: 0;
       margin: 0;
     }
 
     .bottomCardText {
       order: -1;
     }
-  }
-
-  .topCard {
-    background-color: salmon;
   }
 
   .navButtons {
@@ -456,5 +438,4 @@ body {
       width: 32%;
     }
   }
-
 }
