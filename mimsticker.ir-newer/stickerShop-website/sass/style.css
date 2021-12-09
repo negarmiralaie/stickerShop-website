@@ -260,6 +260,16 @@ body h4 {
   position: relative;
 }
 
+.folllowInstaAdd .upwardCurve {
+  margin-bottom: -3%;
+}
+
+.folllowInstaAdd .downwardCurve {
+  position: relative;
+  margin-top: -3%;
+  z-index: -1;
+}
+
 .folllowInstaAdd .follownInstaSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,7 +284,7 @@ body h4 {
 
 .folllowInstaAdd .follownInstaSection button {
   background-color: #fff;
-  margin: 0 auto 2rem auto;
+  margin: 2rem auto 2rem auto;
   padding: 1rem;
   max-width: 17rem;
   border-radius: 100px;
@@ -285,19 +295,14 @@ body h4 {
 }
 
 .folllowInstaAdd .followInstaCards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
 }
 
 .folllowInstaAdd .followInstaCards img {
   width: 100%;
-  max-width: 170px;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   margin-bottom: 2rem;
@@ -467,9 +472,6 @@ body h4 {
 }
 
 @media (min-width: 980px) {
-  body {
-    background-color: red;
-  }
   .bestSelles .sectionWith4childSections {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -478,19 +480,14 @@ body h4 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    direction: rtl;
     gap: 20px;
   }
   .bestSelles .sectionWith4childSections .sectionWith2childSections {
-    background-color: sienna;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     width: 50vw;
-  }
-  .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productImg {
-    background-color: yellow;
   }
   .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productImg img {
     width: 30vw;
@@ -500,7 +497,6 @@ body h4 {
 @media screen and (min-width: 1020px) {
   .topCard,
   .bottomCard {
-    background-color: red;
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -514,7 +510,6 @@ body h4 {
   }
   .topCard .topCardimg,
   .bottomCard .topCardimg {
-    background-color: seagreen;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -532,7 +527,6 @@ body h4 {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    background-color: sienna;
   }
   .topCard {
     background-color: salmon;

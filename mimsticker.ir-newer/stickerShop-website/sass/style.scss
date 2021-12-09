@@ -235,17 +235,25 @@ body {
   margin: 4rem 0;
   position: relative;
 
+  .upwardCurve {
+    margin-bottom: -3%;
+  }
+
+  .downwardCurve {
+    position: relative;
+    margin-top: -3%;
+    z-index: -1;
+  }
+
   .follownInstaSection {
     display: flex;
     flex-direction: column;
     background-color: #F6F6F6;
     margin: 0;
-    // position: absolute;
-    // top: 34px;
 
     button {
       background-color: #fff;
-      margin: 0 auto 2rem auto;
+      margin: 2rem auto 2rem auto;
       padding: 1rem;
       max-width: 17rem;
       border-radius: 100px;
@@ -257,13 +265,11 @@ body {
   }
 
   .followInstaCards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 
     img {
       width: 100%;
-      max-width: 170px;
       filter: grayscale(1);
       margin-bottom: 2rem;
     }
@@ -276,23 +282,18 @@ body {
 }
 
 .bestSelles {
-  // background-color: #46a9e0;
   width: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
 
   .sectionWith4childSections {
-    // background-color: saddlebrown;
-    // width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
     .sectionWith2childSections {
-      // background-color: seagreen;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -300,7 +301,6 @@ body {
       width: 100vw;
 
       .productCard {
-        // background-color: slateblue;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -310,7 +310,6 @@ body {
         width: 50vw;
 
         .productImg {
-          // background-color: springgreen;
           width: 100%;
 
           img {
@@ -358,7 +357,7 @@ body {
       text-align: center;
     }
 
-    p{
+    p {
       margin: auto 0;
     }
   }
@@ -397,26 +396,17 @@ body {
 
 @media(min-width: 980px) {
 
-  body {
-    background-color: red;
-  }
-
   .bestSelles .sectionWith4childSections {
-    // background-color: skyblue;
     display: flex;
     flex-direction: row-reverse;
-    // background-color: sandybrown;
-    direction: rtl;
     gap: 20px;
 
     .sectionWith2childSections {
-      background-color: sienna;
       flex-direction: row-reverse;
       width: 50vw;
     }
 
     .sectionWith2childSections .productCard .productImg {
-      background-color: yellow;
 
       img {
         width: 30vw;
@@ -429,15 +419,13 @@ body {
 
   .topCard,
   .bottomCard {
-    background-color: red;
-    width: 100%;
+        width: 100%;
     flex-direction: row;
     align-items: center;
     margin: 0;
     padding: 0;
 
     .topCardimg {
-      background-color: seagreen;
       width: 100%;
       padding: 0;
       margin: 0;
@@ -445,7 +433,6 @@ body {
 
     .topCardText,
     .bottomCardText {
-      // background-color: springgreen;
       width: 40%;
       padding: 0;
       margin: 0;
@@ -453,7 +440,6 @@ body {
 
     .bottomCardText {
       order: -1;
-      background-color: sienna;
     }
   }
 
