@@ -332,21 +332,25 @@ body {
   background-color: #edeef4;
   min-height: 69px;
   margin-top: 1rem;
+  padding: 20px;
+  gap: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column-reverse;
 
   .pageNavigatorShow {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
+    min-width: 20%;
 
     input {
       border: solid #bbc3ce 1px;
       width: 130px;
       height: 45px;
       text-align: center;
+      margin: 0 10px;
     }
 
     p {
@@ -399,6 +403,10 @@ body {
         width: 30vw;
       }
     }
+  }
+
+  .bestSellesNavigator{
+    flex-direction: row;
   }
 }
 
