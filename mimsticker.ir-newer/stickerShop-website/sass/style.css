@@ -300,6 +300,25 @@ body h6 {
   transition: 0.56s;
 }
 
+.bestSellsHeading {
+  text-align: center;
+  position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 0.6rem;
+}
+
+.bestSellsHeading:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  bottom: -1rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 5%;
+  background: var(--gray-500);
+}
+
 .bestSelles {
   width: 100%;
   display: -webkit-box;

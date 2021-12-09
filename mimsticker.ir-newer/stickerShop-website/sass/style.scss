@@ -8,21 +8,21 @@
 @font-face {
   font-family: shabnamFont;
   src: url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.woff") format("woff"),
-  url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.ttf") format("ttf"),
-  url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.eot") format("eot"),
-  url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.eot") format("eot"),
-  url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.ttf") format("ttf"),
-  url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.woff") format("woff");
+    url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.ttf") format("ttf"),
+    url("../fonts/shabnam-font-v1.1.0/Shabnam-Light.eot") format("eot"),
+    url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.eot") format("eot"),
+    url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.ttf") format("ttf"),
+    url("../fonts/shabnam-font-v1.1.0/Shabnam-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: vazirFont;
   src: url(../fonts/vazir-font-v8.2.1/Vazir-Bold.eot) format("eot"),
-  url(../fonts/vazir-font-v8.2.1/Vazir-Bold.ttf) format("ttf"),
-  url(../fonts/vazir-font-v8.2.1/Vazir-Bold.woff) format("woff"),
-  url(../fonts/vazir-font-v8.2.1/Vazir-Light.eot) format("eot"),
-  url(../fonts/vazir-font-v8.2.1/Vazir-Light.ttf) format("ttf"),
-  url(../fonts/vazir-font-v8.2.1/Vazir-Light.woff) format("woff");
+    url(../fonts/vazir-font-v8.2.1/Vazir-Bold.ttf) format("ttf"),
+    url(../fonts/vazir-font-v8.2.1/Vazir-Bold.woff) format("woff"),
+    url(../fonts/vazir-font-v8.2.1/Vazir-Light.eot) format("eot"),
+    url(../fonts/vazir-font-v8.2.1/Vazir-Light.ttf) format("ttf"),
+    url(../fonts/vazir-font-v8.2.1/Vazir-Light.woff) format("woff");
 }
 
 body {
@@ -276,6 +276,25 @@ body {
   }
 }
 
+.bestSellsHeading {
+  text-align: center;
+  position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 0.6rem;
+}
+
+.bestSellsHeading:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  bottom: -1rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 5%;
+  background: var(--gray-500);
+}
+
 .bestSelles {
   width: 100%;
   display: flex;
@@ -408,12 +427,13 @@ body {
     }
   }
 
-  .bestSellesNavigator{
+  .bestSellesNavigator {
     flex-direction: row;
   }
 }
 
 @media screen and(min-width: 1020px) {
+
   .topCard,
   .bottomCard {
     width: 100%;
