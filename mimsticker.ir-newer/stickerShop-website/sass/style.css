@@ -47,8 +47,8 @@ body h6 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: shabnamFont, vazirFont;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .navButtons {
@@ -383,6 +383,7 @@ body h6 {
   gap: 10px;
   text-align: center;
   width: 50vw;
+  cursor: pointer;
 }
 
 .bestSelles .sectionWith4childSections .sectionWith2childSections .productCard .productImg {
