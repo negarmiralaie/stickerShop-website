@@ -47,6 +47,8 @@ body h6 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: shabnamFont, vazirFont;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .navButtons {
