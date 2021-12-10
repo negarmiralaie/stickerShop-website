@@ -114,6 +114,7 @@ body {
 
   ul {
     list-style: none;
+    color: var(--gray);
 
     li::before {
       content: "\2022";
@@ -123,6 +124,14 @@ body {
       width: 1em;
       margin-left: 0.5em;
     }
+  }
+
+  p{
+    color:var(--gray);
+  }
+
+  h2{
+    font-weight: bold;
   }
 
   input[type="button"] {
