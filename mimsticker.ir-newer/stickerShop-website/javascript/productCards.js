@@ -1,7 +1,7 @@
 let productNo = 0;
 let bestSellesElement = document.getElementById("bestSelles");
 const bestSellesNavigatorElement = document.getElementById(
-  "bestSellesNavigator"
+  "bestSellsNavigator"
 );
 class productCard {
     constructor(productImgSrc, productName, productPrice) {
@@ -75,3 +75,5 @@ class placeCards {
         productNo++;
     }
 }
+
+let allStoredProductCards = [];

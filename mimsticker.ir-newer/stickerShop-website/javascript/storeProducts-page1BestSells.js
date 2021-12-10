@@ -1,4 +1,4 @@
-let allStoredProductCards = [];
+
 
 let card1 = new productCard(
   "../cardsImages/1-1.jpg",

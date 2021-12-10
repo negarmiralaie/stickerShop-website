@@ -119,8 +119,6 @@ body h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 40px;
-  margin-top: 20px;
   width: 100%;
 }
 

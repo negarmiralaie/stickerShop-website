@@ -111,8 +111,6 @@ body {
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-between;
-  line-height: 40px;
-  margin-top: 20px;
   width: 100%;
 
   ul {
@@ -439,6 +437,7 @@ body {
     line-height: 1.7em;
     width: 100%;
     gap: 2%;
+    // line-height: 2em;
 
     .topCardText,
     .bottomCardText,
