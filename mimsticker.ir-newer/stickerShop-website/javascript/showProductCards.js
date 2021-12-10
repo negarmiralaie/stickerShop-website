@@ -23,6 +23,8 @@ function showBestSellsPage3() {
   showEachBestSellsPage(3);
 }
 
+showBestSellsPage1();
+
 let bestSellesNavigator = document.getElementById("bestSellesNavigator");
 
 function createBestSellesElement() {

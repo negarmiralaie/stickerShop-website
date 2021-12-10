@@ -1,3 +1,4 @@
+localStorage.clear();
 let bestSellesNextPageBtn = document.getElementById("bestSellesNextPageBtn");
 let bestSellesPreviousPageBtn = document.getElementById(
   "bestSellesPreviousPageBtn"
@@ -27,6 +28,7 @@ if (
   }
   showBestSellPages();
 } else {
+  console.log("AA");
   bestSellesCurrentPage = 1;
   localStorage.setItem(
     "bestSellesCurrentPage",
