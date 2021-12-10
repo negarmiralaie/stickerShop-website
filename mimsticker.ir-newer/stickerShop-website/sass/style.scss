@@ -115,19 +115,6 @@ body {
   margin-top: 20px;
   width: 100%;
 
-  img {
-    width: 100%;
-    min-height: 100%;
-  }
-
-  .topCardText {
-    margin-left: auto;
-    //width: 50%;
-    padding: 1rem;
-    width: 100%;
-    margin: 5px auto 25px auto;
-  }
-
   ul {
     list-style: none;
 
@@ -147,13 +134,28 @@ body {
   }
 }
 
-.bottomCard {
+.bottomCard,
+.topCard {
   width: 100%;
+
+  .bottomCardImg,
+  .topCardImg{
+    width: 100%;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .topCardText{
+    padding: 1rem;
+  }
 
   .bottomCardText {
     order: 1;
     margin: 5px auto 25px auto;
     padding: 1rem;
+    width: 100%;
   }
 }
 
@@ -422,7 +424,6 @@ body {
     }
   }
 
-
   .bestSellesNavigator {
     flex-direction: row;
   }
@@ -431,28 +432,27 @@ body {
 @media screen and(min-width: 1020px) {
 
   .topCard,
-  .bottomCard {
-    width: 100%;
+  .bottomCard{
     flex-direction: row;
     align-items: center;
-    margin: 0;
-    padding: 0;
-
-    .topCardimg {
-      width: 100%;
-      padding: 0;
-      margin: 0;
-    }
+    justify-content: center;
+    line-height: 1.7em;
+    width: 100%;
+    gap: 2%;
 
     .topCardText,
-    .bottomCardText {
-      width: 40%;
-      // padding: 0;
-      margin: 0;
+    .bottomCardText,
+    .topCardImg,
+    .bottomCardImg{
+      width: 49%;
+
+      img{
+        width: 100%;
+      }
     }
 
-    .bottomCardText {
-      order: -1;
+    .bottomCardImg{
+      order: 2;
     }
   }
 

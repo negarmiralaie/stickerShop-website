@@ -124,20 +124,6 @@ body h6 {
   width: 100%;
 }
 
-.topCard img,
-.bottomCard img {
-  width: 100%;
-  min-height: 100%;
-}
-
-.topCard .topCardText,
-.bottomCard .topCardText {
-  margin-left: auto;
-  padding: 1rem;
-  width: 100%;
-  margin: 5px auto 25px auto;
-}
-
 .topCard ul,
 .bottomCard ul {
   list-style: none;
@@ -159,16 +145,38 @@ body h6 {
   border-radius: 10px;
 }
 
-.bottomCard {
+.bottomCard,
+.topCard {
   width: 100%;
 }
 
-.bottomCard .bottomCardText {
+.bottomCard .bottomCardImg,
+.bottomCard .topCardImg,
+.topCard .bottomCardImg,
+.topCard .topCardImg {
+  width: 100%;
+}
+
+.bottomCard .bottomCardImg img,
+.bottomCard .topCardImg img,
+.topCard .bottomCardImg img,
+.topCard .topCardImg img {
+  width: 100%;
+}
+
+.bottomCard .topCardText,
+.topCard .topCardText {
+  padding: 1rem;
+}
+
+.bottomCard .bottomCardText,
+.topCard .bottomCardText {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   margin: 5px auto 25px auto;
   padding: 1rem;
+  width: 100%;
 }
 
 .faqArticle {
@@ -494,7 +502,6 @@ body h6 {
 @media screen and (min-width: 1020px) {
   .topCard,
   .bottomCard {
-    width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -502,27 +509,38 @@ body h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  .topCard .topCardimg,
-  .bottomCard .topCardimg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 1.7em;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    gap: 2%;
   }
   .topCard .topCardText,
   .topCard .bottomCardText,
+  .topCard .topCardImg,
+  .topCard .bottomCardImg,
   .bottomCard .topCardText,
-  .bottomCard .bottomCardText {
-    width: 40%;
-    margin: 0;
+  .bottomCard .bottomCardText,
+  .bottomCard .topCardImg,
+  .bottomCard .bottomCardImg {
+    width: 49%;
   }
-  .topCard .bottomCardText,
-  .bottomCard .bottomCardText {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+  .topCard .topCardText img,
+  .topCard .bottomCardText img,
+  .topCard .topCardImg img,
+  .topCard .bottomCardImg img,
+  .bottomCard .topCardText img,
+  .bottomCard .bottomCardText img,
+  .bottomCard .topCardImg img,
+  .bottomCard .bottomCardImg img {
+    width: 100%;
+  }
+  .topCard .bottomCardImg,
+  .bottomCard .bottomCardImg {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .navButtons {
     -webkit-box-orient: horizontal;
