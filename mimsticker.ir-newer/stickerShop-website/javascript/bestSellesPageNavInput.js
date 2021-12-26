@@ -1,4 +1,4 @@
-localStorage.clear();
+//localStorage.clear();
 let bestSellesNextPageBtn = document.getElementById("bestSellesNextPageBtn");
 let bestSellesPreviousPageBtn = document.getElementById(
   "bestSellesPreviousPageBtn"
